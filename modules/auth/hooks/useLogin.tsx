@@ -35,7 +35,7 @@ export function useLogin() {
       }
 
       // set cookie token
-      setToken(json.token, {
+      setToken(json.data.token, {
         days: data.remember ? 30 : 7,
         SameSite: "Strict",
         Secure: true,

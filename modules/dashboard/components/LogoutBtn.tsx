@@ -6,7 +6,7 @@ import { logout } from "@/services/profileService";
 import { useProfileStore } from "@/stores/useProfileStore";
 import { useRouter } from "next/navigation";
 import { ReactNode, useState } from "react";
-import useCookie from "react-use-cookie";
+import useCookie, { getCookie } from "react-use-cookie";
 import { toast } from "sonner";
 
 type Props = {};
