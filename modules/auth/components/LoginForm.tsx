@@ -35,12 +35,10 @@ export default function LoginForm() {
   return (
     <Card className="rounded-xl py-10 relative overflow-visible">
       <CardHeader className="px-7 md:px-10 pt-0 pb-5 ">
-        
-          <CardTitle className="text-xl">Get Started Now!</CardTitle>
-          <CardDescription>
-            Please Login to your account to continue
-          </CardDescription>
-        
+        <CardTitle className="text-xl">Get Started Now!</CardTitle>
+        <CardDescription>
+          Please Login to your account to continue
+        </CardDescription>
         <img src="/logo.svg" alt="" className=" absolute -top-8 right-0 h-20" />
       </CardHeader>
 

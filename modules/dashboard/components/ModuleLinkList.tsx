@@ -1,14 +1,19 @@
-import { ShoppingCart } from "lucide-react";
+import { ChartBarStacked, CircleUserRound, ShoppingCart, SquareMenu, Users, Utensils } from "lucide-react";
 import ModuleLink from "./ModuleLink";
 
 function ModuleLinkList() {
   const moduleLinks = [
     {
-      groupTitle: "Sale Module",
+      groupTitle: "Sale Relations",
       modules: [
         {
           icon: <ShoppingCart />,
-          title: "Sale",
+          title: "Sale Screen",
+          href: "/dashboard/sale",
+        },
+        {
+          icon: <SquareMenu />,
+          title: "Sale Voucher",
           href: "/dashboard/sale",
         },
       ],
@@ -17,18 +22,18 @@ function ModuleLinkList() {
       groupTitle: "Management",
       modules: [
         {
-          icon: <ShoppingCart />,
-          title: "Sale",
+          icon: <ChartBarStacked />,
+          title: "Category",
           href: "/dashboard/sale",
         },
         {
-          icon: <ShoppingCart />,
-          title: "Sale",
+          icon: <Utensils />,
+          title: "Menu",
           href: "/dashboard/sale",
         },
         {
-          icon: <ShoppingCart />,
-          title: "Sale",
+          icon: <Users />,
+          title: "Customer",
           href: "/dashboard/sale",
         },
       ],
@@ -37,8 +42,13 @@ function ModuleLinkList() {
       groupTitle: "User Information",
       modules: [
         {
-          icon: <ShoppingCart />,
-          title: "Sale",
+          icon: <CircleUserRound />,
+          title: "Profile Information",
+          href: "/dashboard/sale",
+        },
+        {
+          icon: <CircleUserRound />,
+          title: "Brand Information",
           href: "/dashboard/sale",
         },
       ],

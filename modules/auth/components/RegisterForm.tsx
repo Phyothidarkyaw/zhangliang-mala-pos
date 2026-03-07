@@ -41,7 +41,6 @@ export default function RegisterForm() {
           Enter your details below to Sign Up
         </CardDescription>
         <img src="/logo.svg" alt="" className=" absolute -top-8 right-0 h-20" />
-
       </CardHeader>
 
       <CardContent className="px-7 md:px-10 py-0">
