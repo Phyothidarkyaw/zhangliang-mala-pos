@@ -33,12 +33,15 @@ export default function LoginForm() {
   } = useLogin();
 
   return (
-    <Card className="rounded-xl py-10">
-      <CardHeader className="px-7 md:px-10 pt-0 pb-5 text-center">
-        <CardTitle className="text-xl">Log in to your account</CardTitle>
-        <CardDescription>
-          Enter your email and password below to log in
-        </CardDescription>
+    <Card className="rounded-xl py-10 relative overflow-visible">
+      <CardHeader className="px-7 md:px-10 pt-0 pb-5 ">
+        
+          <CardTitle className="text-xl">Get Started Now!</CardTitle>
+          <CardDescription>
+            Please Login to your account to continue
+          </CardDescription>
+        
+        <img src="/logo.svg" alt="" className=" absolute -top-8 right-0 h-20" />
       </CardHeader>
 
       <CardContent className="px-7 md:px-10 py-0">
@@ -97,7 +100,7 @@ export default function LoginForm() {
             />
 
             {/* Remember */}
-            
+
             <Controller
               name="remember"
               control={control}
@@ -109,7 +112,9 @@ export default function LoginForm() {
                       onCheckedChange={field.onChange}
                       id="remember-check"
                     />
-                    <FieldLabel htmlFor="remember-check">Remember me</FieldLabel>
+                    <FieldLabel htmlFor="remember-check">
+                      Remember me
+                    </FieldLabel>
                   </div>
 
                   {fieldState.error && (
@@ -132,8 +137,8 @@ export default function LoginForm() {
             </Field>
           </FieldGroup>
 
-          <div className="text-center text-xs text-muted-foreground">
-            Don&apos;t have an account?{" "}
+          <div className="text-center text-xs flex gap-3 justify-center text-muted-foreground">
+            Have an account?{" "}
             <Link className=" underline" href="/register">
               Sign up
             </Link>

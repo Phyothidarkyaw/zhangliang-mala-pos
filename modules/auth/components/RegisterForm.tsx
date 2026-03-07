@@ -34,12 +34,14 @@ export default function RegisterForm() {
   } = useRegister();
 
   return (
-    <Card className="rounded-xl py-10">
-      <CardHeader className="px-7 md:px-10 pt-0 pb-5 text-center">
-        <CardTitle className="text-xl">Create an account</CardTitle>
+    <Card className="rounded-xl py-10 relative overflow-visible">
+      <CardHeader className="px-7 md:px-10 pt-0 pb-5">
+        <CardTitle className="text-xl">Register Now!</CardTitle>
         <CardDescription>
-          Enter your details below to create your account
+          Enter your details below to Sign Up
         </CardDescription>
+        <img src="/logo.svg" alt="" className=" absolute -top-8 right-0 h-20" />
+
       </CardHeader>
 
       <CardContent className="px-7 md:px-10 py-0">
@@ -169,11 +171,11 @@ export default function RegisterForm() {
               disabled={isSubmitting}
             >
               {isSubmitting && <Spinner className=" size-3" />}
-              Create Account
+              Sign Up
             </Button>
           </FieldGroup>
 
-          <div className="text-center text-xs text-muted-foreground">
+          <div className="text-center text-xs flex gap-3 justify-center text-muted-foreground">
             Already have an account?{" "}
             <Link className=" underline" href={defaultLoginRoutePath}>
               Log in

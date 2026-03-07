@@ -4,6 +4,7 @@ import { Spinner } from "@/components/ui/spinner";
 import { defaultLoginRoutePath } from "@/lib/constants";
 import { logout } from "@/services/profileService";
 import { useProfileStore } from "@/stores/useProfileStore";
+import { LogOut } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { ReactNode, useState } from "react";
 import useCookie, { getCookie } from "react-use-cookie";
@@ -41,7 +42,7 @@ function LogoutBtn({}: Props) {
   };
   return (
     <Button disabled={loading} variant={"secondary"} onClick={handleClick}>
-      {loading && <Spinner className=" size-3" />} Logout
+      {loading ? <Spinner className=" size-3" /> : <LogOut className="size-3" /> } Logout
     </Button>
   );
 }
