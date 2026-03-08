@@ -24,17 +24,17 @@ function ModuleLinkList() {
         {
           icon: <ChartBarStacked />,
           title: "Category",
-          href: "/dashboard/sale",
+          href: "/dashboard/categories",
         },
         {
           icon: <Utensils />,
           title: "Menu",
-          href: "/dashboard/sale",
+          href: "/dashboard/menu",
         },
         {
           icon: <Users />,
           title: "Customer",
-          href: "/dashboard/sale",
+          href: "/dashboard/customers",
         },
       ],
     },
@@ -44,12 +44,12 @@ function ModuleLinkList() {
         {
           icon: <CircleUserRound />,
           title: "Profile Information",
-          href: "/dashboard/sale",
+          href: "/dashboard/profile-information",
         },
         {
           icon: <CircleUserRound />,
           title: "Brand Information",
-          href: "/dashboard/sale",
+          href: "/dashboard/profile-information",
         },
       ],
     },

@@ -19,7 +19,6 @@ export const useProfileStore = create<ProfileState>()(
     }),
     {
       name: "profile-storage",
-      partialize: (state) => ({ profile: state.profile }),
     }
   )
 );

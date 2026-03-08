@@ -41,7 +41,7 @@ function LogoutBtn({}: Props) {
     }
   };
   return (
-    <Button disabled={loading} variant={"secondary"} onClick={handleClick}>
+    <Button disabled={loading} variant={"outline"} onClick={handleClick}>
       {loading ? <Spinner className=" size-3" /> : <LogOut className="size-3" /> } Logout
     </Button>
   );

@@ -2,12 +2,19 @@
 
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { LoginFormValues, loginSchema } from "@/types/AuthTypes";
+import { LoginFormValues } from "@/types/AuthTypes";
 import { toast } from "sonner";
 import useCookie from "react-use-cookie";
 import { useRouter } from "next/navigation";
 import { useProfileStore } from "@/stores/useProfileStore";
 import { login } from "@/services/authService";
+import z from "zod";
+
+export const loginSchema = z.object({
+  email: z.string().email("Invalid email address"),
+  password: z.string().min(8, "Password must be at least 8 characters"),
+  remember: z.boolean().optional(),
+});
 
 export function useLogin() {
   const form = useForm<LoginFormValues>({
